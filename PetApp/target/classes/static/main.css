@@ -1,0 +1,22 @@
+body {
+
+    height: 100%;
+    background-image: url("images/girlwithdog.jpg");
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  }
+  
+.footer {
+	
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  
+  }
+ 

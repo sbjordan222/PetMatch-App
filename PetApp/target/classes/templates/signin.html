@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+   <title>Sign In</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"><link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous">
+  </head>
+  <body style="padding: 0">
+  <main role="main">
+      <div class="container">
+          <form class="form-signin" action="#" th:action="@{/signin}" method="post">
+              <h2 class="form-signin-heading" style="text-align: center">Please Sign In/Up</h2>
+              <p>
+                  <label for="username" class="sr-only">User name</label>
+                  <input type="text" id="username" name="username" class="form-control" placeholder="Username">
+              </p>
+              <p>
+                  <label for="password" class="sr-only">Password</label>
+                  <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+              </p>
+              <div style="display: flex; justify-content: space-between">
+                  <button class="btn btn-lg btn-primary" name="submit" value="in" type="submit" style="flex-grow: 0.95">Sign In</button>
+                  <button class="btn btn-lg btn-success" name="submit" value="up" type="submit">Sign Up</button>
+              </div>
+          </form>
+      </div>
+  </main>
+  <footer>
+    <hr />
+    <div class="footer">
+        <p>© Company 2021</p>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </div>
+</footer>
+  </body>
+  </html>
